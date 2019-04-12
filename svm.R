@@ -5,7 +5,6 @@ train.data$hoax <- as.factor(train.data$hoax)
 test.data$hoax <- as.factor(test.data$hoax)
 
 
-
 library(e1071)
 
 tune.svm <- tune.svm( hoax ~ feature1 + feature1.1 + feature2.1 + feature2.2 + feature3 + feature4 + feature5, data = train.data,
