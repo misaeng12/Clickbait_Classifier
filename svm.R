@@ -1,6 +1,4 @@
 
-setwd("C:\\Users\\SONpc\\Desktop\\성이\\BOAZ 프로젝트\\modeling")
-
 train.data <- read.csv("train_featured.csv", encoding="cp949")
 test.data <- read.csv("test_featured.csv", encoding="cp949")
 
