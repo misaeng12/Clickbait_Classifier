@@ -1,4 +1,3 @@
-
 train.data <- read.csv("train_featured.csv", encoding="cp949")
 test.data <- read.csv("test_featured.csv", encoding="cp949")
 
