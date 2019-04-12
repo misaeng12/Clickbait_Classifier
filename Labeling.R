@@ -1,5 +1,3 @@
-setwd("C:\\Users\\user\\Desktop\\조롱이")
-
 ## Extracting Clickbait using Comments
 hoax.index <- sort(unique(c( grep("낚", news$best_comment), grep("낚", news$none_best_comment),
                              grep("기레기", news$best_comment), grep("기레기", news$none_best_comment) )))
