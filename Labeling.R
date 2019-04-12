@@ -1,6 +1,6 @@
 setwd("C:\\Users\\user\\Desktop\\조롱이")
 
-# 전체 낚시성 기사 뽑기
+## Extracting Clickbait using Comments
 hoax.index <- sort(unique(c( grep("낚", news$best_comment), grep("낚", news$none_best_comment),
                              grep("기레기", news$best_comment), grep("기레기", news$none_best_comment) )))
 
@@ -12,12 +12,14 @@ hoax <- news[ hoax.index , ]
 write.csv(news, "news(2008-2011).csv", fileEncoding="euc-kr")
 write.csv(hoax, "hoax(2008-2011).csv", fileEncoding="euc-kr")
 
-# 스포츠, 연예에서 낚시성 기사 뽑기
+
+## Extracting Clickbait from categories of "Sports" and "Entertainment"
 news1 <- news[news$cateogory=="스포츠" | news$cateogory=="연예", ]
 hoax1 <- hoax[hoax$cateogory=="스포츠" | hoax$cateogory=="연예", ]
 
 nrow(news1); nrow(hoax1)
 
 write.csv(hoax1, "hoax1(2008-2011).csv", fileEncoding="euc-kr")
-# hoax 직접 보고 거른 다음 2배의 일반 기사 뽑기
+
+## Extracting Normal 2 times Clickbaits
 write.csv(news1[0:2n,], "normal1(2008-2011).csv", fileEncoding="euc-kr")
