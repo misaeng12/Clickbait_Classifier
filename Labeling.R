@@ -21,5 +21,5 @@ nrow(news1); nrow(hoax1)
 
 write.csv(hoax1, "hoax1(2008-2011).csv", fileEncoding="euc-kr")
 
-## Extracting Normal 2 times Clickbaits
+## Extracting Normal articles 2 times as many as Clickbaits
 write.csv(news1[0:2n,], "normal1(2008-2011).csv", fileEncoding="euc-kr")
