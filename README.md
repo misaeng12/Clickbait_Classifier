@@ -3,4 +3,4 @@
 
 * Data: 약 8년치 인터넷 기사를 웹크롤링을 통하여 수집
 * Text mining을 활용한 Labeling과 Feature 추출(데이터 정형화)
-* DNN, SVM, Naive Bayes Classifier을 이용한 Classification 모델링
+* SVM, DNN, Naive Bayes Classifier을 이용한 Classification 모델링
